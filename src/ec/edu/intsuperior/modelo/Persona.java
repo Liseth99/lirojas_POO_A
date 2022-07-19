@@ -11,5 +11,31 @@ package ec.edu.intsuperior.modelo;
  */
 public class Persona {
     String nombre;
+    Integer edad;
+
+    public Persona() {
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Integer getEdad() {
+        return edad;
+    }
+
+    public void setEdad(Integer edad) {
+        this.edad = edad;
+    }
+    
+    public String mostrar(String nombre, int edad){
+     return nombre +  " "+edad ;
+     
+        
+    }
     
 }
