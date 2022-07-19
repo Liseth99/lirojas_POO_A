@@ -1,38 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.edu.intsuperior.modelo;
 
-/**
- *
- * @author Cristhian
- */
+
 public class Empleado {
 
-    Persona persona = new Persona();
-    Double sueldo_bruto;
+    double empSueldoBruto;
 
     public Empleado() {
     }
 
-    public Double getSueldo_bruto() {
-        return sueldo_bruto;
+    public double getEmpSueldoBruto() {
+        return empSueldoBruto;
     }
 
-    public void setSueldo_bruto(Double sueldo_bruto) {
-        this.sueldo_bruto = sueldo_bruto;
+    public void setEmpSueldoBruto(double empSueldoBruto) {
+        this.empSueldoBruto = empSueldoBruto;
     }
 
-    public String mostrar(String nombre, int edad, double sueldo_bruto) {
-        return persona.mostrar(nombre, edad) + " " + sueldo_bruto;
+    public void mostrar(Persona persona, int dias, int horas) {
+        System.out.println("Los datos del empleado son:");
+        System.out.println("Nombre: " + persona.getPerNombre());
+        System.out.println("Edad: " + persona.getPerEdad());
+        System.out.println("Su sueldo neto es: " + calcular_salario_neto(dias, horas));
     }
 
-    public Double calcularSueldo(int Dias, int Horas){
-        double respuesta;
-        respuesta = Dias * Horas;
+    public double calcular_salario_neto(int dias, int horas) {
+        int respuesta = dias * horas;
         return respuesta;
     }
-    
+
 }

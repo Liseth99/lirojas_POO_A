@@ -1,32 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.edu.intsuperior.modelo;
 
-/**
- *
- * @author Cristhian
- */
-public class Directivo {
+public class Directivo  extends Empleado {
 
-    Empleado empleado = new Empleado();
-    String categoria;
+     String dirCategoria;
 
     public Directivo() {
     }
 
-    public String getCategoria() {
-        return categoria;
+    public String getDirCategoria() {
+        return dirCategoria;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setDirCategoria(String dirCategoria) {
+        this.dirCategoria = dirCategoria;
     }
 
-    public String mostrar(String nombre, int edad, double sueldo_bruto, String categoria) {
-        return empleado.mostrar(nombre, edad, sueldo_bruto) + " " + categoria;
-
+    public void mostrar(Persona persona, int dias, int horas, String dirCategoria) {
+        System.out.println("Los datos del empleado son:");
+        System.out.println("Nombre: " + persona.getPerNombre());
+        System.out.println("Edad: " + persona.getPerEdad());
+        System.out.println("Categoria: " + dirCategoria);
+        System.out.println("Su sueldo neto es: " + calcular_salario_neto(dias, horas));
     }
+
 }

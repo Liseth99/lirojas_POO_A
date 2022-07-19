@@ -1,41 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.edu.intsuperior.modelo;
 
-/**
- *
- * @author Cristhian
- */
 public class Persona {
-    String nombre;
-    Integer edad;
+    String perNombre;
+    Integer perEdad;
 
     public Persona() {
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getPerNombre() {
+        return perNombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setPerNombre(String perNombre) {
+        this.perNombre = perNombre;
     }
 
-    public Integer getEdad() {
-        return edad;
+    public Integer getPerEdad() {
+        return perEdad;
     }
 
-    public void setEdad(Integer edad) {
-        this.edad = edad;
+    public void setPerEdad(Integer perEdad) {
+        this.perEdad = perEdad;
     }
-    
-    public String mostrar(String nombre, int edad){
-     return nombre +  " "+edad ;
-     
-        
-    }
-    
+
 }

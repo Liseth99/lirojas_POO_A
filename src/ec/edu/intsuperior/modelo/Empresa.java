@@ -1,29 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.edu.intsuperior.modelo;
 
-/**
- *
- * @author Cristhian
- */
 public class Empresa {
-    String nombre;
+     String empNombre;
 
     public Empresa() {
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getEmpNombre() {
+        return empNombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setEmpNombre(String empNombre) {
+        this.empNombre = empNombre;
     }
-    public String mostrar(String nombre){
-        return nombre;
-        
-    }
+
 }

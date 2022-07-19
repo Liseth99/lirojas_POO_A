@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,20 +10,24 @@ package ec.edu.intsuperior.modelo;
  *
  * @author Cristhian
  */
-public class Cliente {
-    Persona persona=new Persona();
-    String telefono_de_contacto;
+public class Cliente extends Persona {
+    String cliTelefono;
 
-    public String getTelefono_de_contacto() {
-        return telefono_de_contacto;
+    public Cliente() {
     }
 
-    public void setTelefono_de_contacto(String telefono_de_contacto) {
-        this.telefono_de_contacto = telefono_de_contacto;
+    public String getCliTelefono() {
+        return cliTelefono;
     }
-    public String mostrar(String nombre, int edad, String telefono_de_contacto){
-        return persona.mostrar(nombre, edad)+ " "+ telefono_de_contacto;
-        
-                
+
+    public void setCliTelefono(String cliTelefono) {
+        this.cliTelefono = cliTelefono;
+    }
+
+    public void mostrar(Persona persona, String cliTelefono) {
+        System.out.println("Los datos del cliente son:");
+        System.out.println("Nombre: " + persona.getPerNombre());
+        System.out.println("Edad: " + persona.getPerEdad());
+        System.out.println("Telefono: " + cliTelefono);
     }
 }
